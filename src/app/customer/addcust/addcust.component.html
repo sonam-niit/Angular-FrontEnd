@@ -1,0 +1,18 @@
+<form (ngSubmit)="onSubmit()">
+    <div class="form-group">
+        <label>Name</label>
+        <input type="text" name="name" id="name"
+        placeholder="Enter name" class="form-control" [(ngModel)]="customer.name">
+    </div>
+    <div class="form-group">
+        <label>Email</label>
+        <input type="email" name="email" id="email"
+        placeholder="Enter Email" class="form-control" [(ngModel)]="customer.email">
+    </div>
+    <div class="form-group">
+        <label>Address</label>
+        <input type="text" name="address" id="address"
+        placeholder="Enter Address" class="form-control" [(ngModel)]="customer.address">
+    </div>
+    <button class="btn btn-primary">Save Customer</button>
+</form>

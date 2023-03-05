@@ -15,9 +15,8 @@ export class CustloginComponent {
   constructor(private service:CustomerService,private router:Router){}
   onSubmit(){
     this.service.login(this.customer).subscribe(resp=>{
-      console.log(resp)
-    });
+      this.router.navigate(['dashboard']);
+    }, error=>console.log(error));
     
-    this.router.navigate(['dashboard']);
   }
 }
